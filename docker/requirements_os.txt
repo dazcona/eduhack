@@ -1,0 +1,5 @@
+nano
+git
+make
+python3-pyaudio
+portaudio19-dev

@@ -1,0 +1,50 @@
+version: '2.3'
+
+services:
+
+  edu_container:
+    image: edu_image
+    container_name: edu_container
+    working_dir: /code
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    environment:
+      - PYTHONPATH=/code
+    env_file:
+      - .env
+
+# Setup the volumes you want to share:
+    volumes:
+      - ../:/code
+
+# Uncomment the following line to use an NVIDIA GPU (requires nvidia-docker)
+    # runtime: nvidia
+
+# By default this container stay alive without running any command 
+    command: tail /dev/null -f
+# If installed, you can start Jupyter Notebook every time you run the container
+    #command: jupyter notebook --allow-root --ip=0.0.0.0
+
+  
+#   yolo:
+#     image: yolo
+#     container_name: yolo
+#     working_dir: /yolo
+#     build:
+#       context: ../
+#       dockerfile: docker/Dockerfile.yolo
+#     # environment:
+#       # - PYTHONPATH=/code
+
+# # Setup the volumes you want to share:
+#     volumes:
+#       - ../:/yolo
+
+# # Uncomment the following line to use an NVIDIA GPU (requires nvidia-docker)
+#     runtime: nvidia
+
+# # By default this container stay alive without running any command 
+#     command: tail /dev/null -f
+# # If installed, you can start Jupyter Notebook every time you run the container
+#     #command: jupyter notebook --allow-root --ip=0.0.0.0
