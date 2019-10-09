@@ -2,9 +2,9 @@
 
 We developed Canary AI ChatBot for Zero-Harm workplace for miners that uses Computer Vision, AI & Data Analytics
 
-[CanaryAI at DigiEduHack in Dublin October 2019](https://docs.google.com/presentation/d/1WuO9cWLMO0bI6BLa7bFO6DmsfRDiDGcSPYE9rjwmUjA/edit?usp=sharing)
-
-[CanaryAI on Twitter](https://twitter.com/CanaryAI1)
+* Slides: [CanaryAI at DigiEduHack in Dublin October 2019](https://docs.google.com/presentation/d/1WuO9cWLMO0bI6BLa7bFO6DmsfRDiDGcSPYE9rjwmUjA/edit?usp=sharing)
+* YouTube: [Video](https://www.youtube.com/watch?v=eWeDtBGSpjw)
+* Twitter: [CanaryAI](https://twitter.com/CanaryAI1)
 
 ## Technologies
 
